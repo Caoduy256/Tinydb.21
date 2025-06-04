@@ -21,4 +21,62 @@ Cài đặt qua `pip`:
 
 ```bash
 pip install tinydb
+```
+## 🧪 Cách sử dụng cơ bản
+
+```python
+from tinydb import TinyDB, Query
+
+# Khởi tạo database lưu trong file 'db.json'
+db = TinyDB('db.json')
+
+# Thêm một tài liệu mới
+db.insert({'name': 'Nam', 'age': 20})
+
+# Tạo truy vấn
+User = Query()
+
+# Tìm các tài liệu có tên là 'Nam'
+results = db.search(User.name == 'Nam')
+
+print(results)
+```
+## 📚 Tài liệu
+
+Bạn có thể xem tài liệu chi tiết và các ví dụ nâng cao tại:  
+👉 [https://tinydb.readthedocs.io/](https://tinydb.readthedocs.io/)
+
+---
+
+## ✅ Các phiên bản Python được hỗ trợ
+
+TinyDB hỗ trợ Python từ phiên bản **3.7 trở lên**.
+
+---
+
+## 📌 Khi nào nên dùng TinyDB?
+
+TinyDB phù hợp với:
+
+- Các ứng dụng nhỏ, công cụ cá nhân  
+- Lưu cấu hình hoặc dữ liệu đơn giản  
+- Ứng dụng desktop, CLI, phần mềm nhúng  
+- Mục đích học tập, thử nghiệm nhanh ý tưởng  
+
+**Không khuyến khích dùng TinyDB nếu bạn cần:**
+
+- Xử lý dữ liệu lớn  
+- Truy cập đồng thời cao  
+- Các truy vấn phức tạp  
+
+Trong các trường hợp đó, hãy cân nhắc dùng PostgreSQL, MongoDB,...
+
+---
+
+## 📄 Giấy phép
+
+TinyDB được phát hành theo giấy phép **MIT**.  
+Xem chi tiết trong file LICENSE.
+
+
 
