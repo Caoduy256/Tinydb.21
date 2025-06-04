@@ -67,9 +67,7 @@ TinyDB phù hợp với:
 
 - Xử lý dữ liệu lớn  
 - Truy cập đồng thời cao  
-- Các truy vấn phức tạp  
-
-Trong các trường hợp đó, hãy cân nhắc dùng PostgreSQL, MongoDB,...
+- Các truy vấn phức tạp
 
 ---
 
